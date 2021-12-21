@@ -1,0 +1,16 @@
+mixin product-item(img,title,price,link)
+    .card.mx-auto
+        a(href=link) 
+            img.card-img-top(src= img, alt='Card image')
+        .card-body
+            h6.card-title= title
+            p.card-text= price
+            a.btn.btn-primary.fas.fa-cart-arrow-down(href='#')  Thêm vào giỏ
+
+mixin post(href,img)
+    a(href=href) 
+        img(src=img, alt="Post image")
+    if block
+        block
+mixin link(href,name)
+    a(href=href)&attributes(attributes)= name

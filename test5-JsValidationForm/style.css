@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.a1{
+    width: 1000px;
+    height: 2000px;
+    border: 1px solid red;
+}
+.a2{
+    /* margin-top: 0; */
+    height: 100px;
+    width: 500px;
+    position: fixed;
+    border: 1px solid brown;
+}
+.a3{
+    /* margin-top: 0; */
+    position: fixed;
+    height: 100px;
+    width: 500px;
+   
+    border: 1px solid orange;
+    bottom: 0;
+}
+.a4{
+    margin-top: 102px;
+    height: 27%;
+    width: 80%;
+    border: 1px solid blue;
+    position: relative;
+}
+.a5{
+    border: 1px solid violet;
+    height: 200px;
+    width: 600px;
+    margin-left: 100px;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.a6{
+    position: absolute;
+    border: 1px solid yellow;
+    height: 100px;
+    width: 100px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+@media only screen and (max-width: 320px) {
+    .a1{
+        width: 20px;
+    }
+    .a2{
+      width: 30px;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .a6{
+        width: 20px;
+    }
+    .a1 {
+      width: 50px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .a2{
+        width: 30px;
+    }
+    .a6{
+      width: 40px;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .a6{
+        width: 30px;
+    }
+    .a5{
+      width: 40px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .a5{
+        width: 50px;
+    }
+    .a3{
+      width: 100px;
+    }
+  } 
+
+

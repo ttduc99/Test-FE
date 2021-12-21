@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Recursive:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Nunito:wght@200&family=Recursive:wght@300&display=swap");
+.infoheader {
+  color: #FFF;
+  background: #444242;
+  height: 2rem;
+}
+.infoheader__hotline {
+  line-height: 2rem;
+  cursor: pointer;
+}
+.infoheader__hotline:hover {
+  opacity: 60%;
+}
+.infoheader__shopsystem {
+  text-align: right;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.infoheader a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 992px) {
+  .infoheader__shopsystem {
+    display: none;
+  }
+}
+
+.mainheader h1 {
+  font-family: "Recursive";
+}
+.mainheader__logo img {
+  display: block;
+  height: 80%;
+}
+.mainheader__user {
+  margin: auto 0;
+  text-align: right;
+}
+.mainheader__user button {
+  line-height: 2.5em;
+  background: #FFF;
+  padding: 0 1em;
+}
+.mainheader__user button:hover {
+  color: #FFF;
+  background: #444242;
+}
+@media only screen and (max-width: 768px) {
+  .mainheader h1 {
+    display: none;
+  }
+}
+
+.navbar {
+  background-color: #FFF !important;
+  /* padding: 0 3.5em; */
+  font-weight: 600;
+}
+.navbar a {
+  color: black !important;
+}
+.navbar a:hover {
+  background-color: #e9ecdf;
+  border-radius: 1rem;
+}
+.navbar__mainmenu .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.navbar__mainmenu .dropdown-menu {
+  border-radius: 1rem;
+}
+.navbar__extention button {
+  line-height: 2.5em;
+  background: #FFF;
+  padding: 0 1em;
+}
+.navbar__extention button {
+  border: none;
+}
+
+.footer__criteria {
+  margin-top: 5rem;
+  background-color: #e5e5e5;
+  padding: 2rem 0;
+}
+.footer__criteria .fas {
+  color: #e5e5e5;
+  background-color: #444242;
+  border-radius: 5rem;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  line-height: 5rem;
+  text-align: center;
+}
+.footer__criteria .fas:hover {
+  border-radius: 0;
+  transition: 0.5s;
+}
+.footer__criteria h5 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer__main {
+  padding: 2rem 0;
+  background-color: #e5e5e5;
+  line-height: 2.5rem;
+  margin-top: 5rem;
+}
+.footer__main .fa-store {
+  line-height: 1.3em;
+}
+.footer__main a {
+  text-decoration: none;
+  color: #444242;
+}
+.footer__main a:hover {
+  color: #186183;
+  margin-left: 1rem;
+  transition: 0.7s;
+}
+.footer__main .form-inline button {
+  line-height: 2.5em;
+  background: #FFF;
+  padding: 0 1em;
+}
+.footer__main .form-inline input {
+  height: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer__main .form-inline input {
+    width: 70%;
+  }
+}
+.footer__main .form-inline button {
+  background-color: #e64444;
+  color: #FFF;
+  font-weight: 500;
+  opacity: 90%;
+}
+@media only screen and (max-width: 1200px) {
+  .footer__main .form-inline button {
+    display: block;
+    margin: 1rem auto;
+  }
+}
+.footer__main .form-inline button:hover {
+  opacity: 100%;
+}
+.footer__main__content {
+  margin-top: 2rem;
+}
+.footer__main__content h4 {
+  font-weight: bold;
+}
+.footer__main img {
+  margin-top: 3rem;
+}
+
+body {
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.container-fuild {
+  margin: 0 2em;
+}
+
+.main-img, .summersunset__bigimg img, .luxurytrip__bigimg img, .slider .carousel-item img {
+  height: 40rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .slider {
+    display: none;
+  }
+}
+.luxurytrip {
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .luxurytrip__bigimg img {
+    height: 100%;
+    border-radius: 1rem;
+  }
+}
+.luxurytrip .carousel {
+  background: #e9ecdf;
+  border-radius: 2rem;
+}
+.luxurytrip .carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%444242' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+.luxurytrip .carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%444242' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+.luxurytrip .card {
+  border-radius: 1rem;
+  width: 16rem;
+  border: none;
+  margin-top: 1rem;
+}
+.luxurytrip .card img {
+  height: 18rem;
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 320px) {
+  .luxurytrip .card img {
+    height: 14rem;
+  }
+}
+.luxurytrip .card p {
+  text-align: center;
+  color: red;
+}
+.luxurytrip .card h6 {
+  text-align: center;
+}
+.luxurytrip .card .btn {
+  width: 100%;
+  background-color: #186183;
+}
+.luxurytrip .card .card-img-top:hover {
+  border-radius: 1rem;
+  padding: 1em;
+  transition: 0.7s;
+}
+.luxurytrip .card .btn:hover {
+  background-color: #FFF;
+  color: #186183;
+}
+@media only screen and (max-width: 768px) {
+  .luxurytrip .card {
+    width: 14rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .luxurytrip .card {
+    width: 12rem;
+  }
+}
+.luxurytrip h2,
+.luxurytrip h3,
+.luxurytrip p {
+  text-align: center;
+}
+.luxurytrip h2,
+.luxurytrip h3 {
+  color: #186183;
+  font-weight: bold;
+}
+.luxurytrip__product__more {
+  text-align: center;
+}
+.luxurytrip__product__more .btn {
+  background-color: #444242;
+}
+.luxurytrip__product__more .btn:hover {
+  background-color: #FFF;
+  color: #444242;
+}
+.luxurytrip__product__more a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .luxurytrip p {
+    text-align: none;
+  }
+}
+
+.summersunset {
+  position: relative;
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .summersunset__bigimg img {
+    height: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
+}
+.summersunset .carousel {
+  background: #e9ecdf;
+  border-radius: 2rem;
+}
+.summersunset .carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%444242' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+.summersunset .carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%444242' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+.summersunset .card {
+  border-radius: 1rem;
+  width: 16rem;
+  border: none;
+  margin-top: 1rem;
+}
+.summersunset .card img {
+  height: 18rem;
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 320px) {
+  .summersunset .card img {
+    height: 14rem;
+  }
+}
+.summersunset .card p {
+  text-align: center;
+  color: red;
+}
+.summersunset .card h6 {
+  text-align: center;
+}
+.summersunset .card .btn {
+  width: 100%;
+  background-color: #186183;
+}
+.summersunset .card .card-img-top:hover {
+  border-radius: 1rem;
+  padding: 1em;
+  transition: 0.7s;
+}
+.summersunset .card .btn:hover {
+  background-color: #FFF;
+  color: #186183;
+}
+@media only screen and (max-width: 768px) {
+  .summersunset .card {
+    width: 14rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .summersunset .card {
+    width: 12rem;
+  }
+}
+.summersunset h2,
+.summersunset h3,
+.summersunset p {
+  text-align: center;
+}
+.summersunset h2,
+.summersunset h3 {
+  color: #186183;
+  font-weight: bold;
+}
+.summersunset__product__more {
+  text-align: center;
+}
+.summersunset__product__more .btn {
+  background-color: #444242;
+}
+.summersunset__product__more .btn:hover {
+  background-color: #FFF;
+  color: #444242;
+}
+.summersunset__product__more a {
+  text-decoration: none;
+}
+
+.newproduct {
+  margin: 4rem 0;
+}
+.newproduct h2,
+.newproduct h3,
+.newproduct p {
+  text-align: center;
+}
+.newproduct h2,
+.newproduct h3 {
+  color: #186183;
+  font-weight: bold;
+}
+.newproduct button {
+  line-height: 2.5em;
+  background: #FFF;
+  padding: 0 1em;
+}
+.newproduct .card {
+  margin-top: 1rem;
+}
+.newproduct .card img {
+  height: 17rem;
+}
+.newproduct .card p {
+  text-align: center;
+  color: red;
+}
+.newproduct .card h6 {
+  text-align: center;
+}
+.newproduct .card .btn {
+  width: 100%;
+  background: #186183;
+}
+.newproduct .card .btn:hover {
+  background-color: #FFF;
+  color: #186183;
+}
+.newproduct .card .card-img-top:hover {
+  padding: 1em;
+  transition: 0.7s;
+}
+@media only screen and (max-width: 768px) {
+  .newproduct .card {
+    width: 15rem;
+  }
+}
+.newproduct__more {
+  margin-top: 2rem;
+  text-align: center;
+}
+.newproduct__more .btn {
+  background-color: #444242;
+}
+.newproduct__more .btn:hover {
+  background-color: #FFF;
+  color: #444242;
+}
+.newproduct__more a {
+  text-decoration: none;
+}
+
+.news {
+  margin-top: 1rem;
+}
+.news__main {
+  overflow: hidden;
+}
+.news__main img {
+  width: 110%;
+  height: 20rem;
+  margin-top: 2rem;
+  display: block;
+}
+.news__main img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
+}
+.news h2 {
+  text-align: center;
+  color: #186183;
+  font-weight: bold;
+}
+.news__anotherpost {
+  padding: 0;
+  width: 100%;
+  margin-left: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .news__anotherpost {
+    display: none;
+  }
+}
+.news__anotherpost img {
+  height: 10em;
+  width: 12em;
+  margin: 1em;
+  float: left;
+}
+.news__anotherpost img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
+}
+.news__anotherpost ul li {
+  margin-right: 3rem;
+  clear: left;
+  list-style: none;
+  border-bottom: 1px solid #888383;
+  float: left;
+}
+.news__anotherpost ul li h5 {
+  padding-top: 1rem;
+  text-align: center;
+}
+.news__anotherpost ul li h5:hover {
+  color: #186183;
+  cursor: pointer;
+}
+.news__more {
+  text-align: center;
+  margin-top: 2rem;
+}
+.news__more .btn {
+  background-color: #444242;
+}
+.news__more .btn:hover {
+  background-color: #FFF;
+  color: #444242;
+}
+
+/*# sourceMappingURL=style.css.map */

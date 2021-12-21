@@ -1,0 +1,103 @@
+extends layout
+block vars 
+    -bodyClass='home-page'
+block container     
+    section.slider
+        figure#demo.carousel.slide(data-ride='carousel')
+            // Indicators
+            ul.carousel-indicators
+                li.active(data-target='#demo' data-slide-to='0')
+                li(data-target='#demo' data-slide-to='1')
+                li(data-target='#demo' data-slide-to='2')
+            // The slideshow
+            figure.carousel-inner
+                figure.carousel-item.active
+                    a(href="") 
+                        img(src='../anh/slider1sva.jpg' alt='sl1')
+                figure.carousel-item
+                    a(href="") 
+                        img(src='../anh/slider2sva.jpg' alt='sl2')
+                figure.carousel-item
+                    a(href="") 
+                        img(src='../anh/slider3sva.jpg' alt='sl3')
+            // Left and right controls
+            a.carousel-control-prev(href='#demo' data-slide='prev')
+                span.carousel-control-prev-icon
+            a.carousel-control-next(href='#demo' data-slide='next')
+                span.carousel-control-next-icon                
+    section.luxurytrip
+        .container-fuild
+            .row
+                .luxurytrip__bigimg.col-lg-6 
+                    img(src="../anh/luxury.png", alt="Luxury")
+                .luxurytrip__product.col-lg-6
+                    h3 SEVEN.AM - LUXURY TRIP
+                    p Mùa hè gợi mở với những chuyến đi tới những miền đất mới. Dành cho những quý cô yêu thích sự sang trọng, tinh tế, cầu kỳ, Luxury Trip là thước đo cho những giá trị sáng tạo thăng hoa, những thiết kế mới được sản xuất trên nền chất liệu cao cấp.
+                    figure#luxury-product.carousel.slide(data-type='carousel' data-width="100%" data-animation="dragX")
+                        figure.carousel-inner
+                            figure.carousel-item.active
+                                +product-item('../anh/lxrproduc.png',"Đầm chiffon xanh","399.000 đ","#")       
+                            figure.carousel-item
+                                +product-item('../anh/lxrproduc2.png',"Đầm ôm tay hồng","399.000 đ","#") 
+                        a.carousel-control-prev(href='#luxury-product' data-slide='prev')
+                            span.carousel-control-prev-icon
+                        a.carousel-control-next(href='#luxury-product' data-slide='next')
+                            span.carousel-control-next-icon
+                    .luxurytrip__product__more
+                        a.btn.btn-secondary(href="") Xem thêm 
+        hr
+    section.summersunset
+        .container-fuild
+            .row
+                .summersunset__product.col-lg-6
+                    h3 SEVEN.AM - SUMMER SUNSET
+                    p Khơi nguồn cảm hứng từ dải màu Byzantine đầy bí ẩn - màu sắc biểu trưng cho quyền lực tối cao của văn hóa Byzantine trong Đế chế La Mã cổ đại, BST Summer Sunset mang ý nghĩa tượng trưng cho vẻ đẹp hoàng gia kiêu sa và huyền bí.
+                    figure#summersunset-product.carousel.slide(data-type='carousel' data-width="100%" data-animation="dragX")
+                        figure.carousel-inner
+                            figure.carousel-item.active
+                                +product-item('../anh/sunsetproduct1.png',"Đầm ren trắng","399.000 đ","#")            
+                            figure.carousel-item
+                                +product-item('../anh/sunsetproduct2.png',"Áo 2 dây chiffon","199.000 đ","#")  
+                        a.carousel-control-prev(href='#summersunset-product' data-slide='prev')
+                            span.carousel-control-prev-icon
+                        a.carousel-control-next(href='#summersunset-product' data-slide='next')
+                            span.carousel-control-next-icon
+                    .summersunset__product__more
+                        a.btn.btn-secondary(href="") Xem thêm
+                .summersunset__bigimg.col-lg-6 
+                    img(src="../anh/sunset.png", alt="summersunset")
+    section.newproduct
+        .container
+            h2 SẢN PHẨM MỚI 
+            .row 
+                .col-sm-6.col-md-4.col-lg-3
+                    +product-item('../anh/newproduct1.png',"Jumsuit C910917","399.000 đ","#")                  
+                .col-sm-6.col-md-4.col-lg-3
+                    +product-item('../anh/newproduct2.png',"Jumsuit C910918","399.000 đ","#")
+                .col-sm-6.col-md-4.col-lg-3
+                    +product-item('../anh/newproduct3.png',"Jumsuit Y90207B","299.000 đ","#")
+                .col-sm-6.col-md-4.col-lg-3
+                    +product-item('../anh/newproduct4.png',"Jumsuit C91094C","440.000 đ","#")
+            .newproduct__more
+                a.btn.btn-secondary(href="") Xem thêm 
+    section.customerreply
+    article.news
+        .container
+            h2 TIN TỨC MỚI NHẤT
+            .row
+                .col-sm-12.col-md-12.col-lg-5
+                    .news__main
+                        +post('#','../anh/post1.png')
+                .col-sm-12.col-md-12.col-lg-7 
+                    article.news__anotherpost
+                        ul
+                            li
+                                +post('#','../anh/post2.png')
+                                h5 TUYỂN DỤNG VỊ TRÍ: TRƯỞNG NHÓM CONTENT MARKETING
+                                p MÔ TẢ CÔNG VIỆC- Chịu trách nhiệm quản lý và thực thi Content marketing trên các kên...
+                            li
+                                +post('#','../anh/post3.png')
+                                h5 TUYỂN DỤNG VỊ TRÍ: TRƯỞNG NHÓM THIẾT KẾ
+                                p MÔ TẢ CÔNG VIỆC - Nghiên cứu, tham khảo, báo cáo xu hướng thời trang, thiết kế phong...
+            .news__more
+                a.btn.btn-secondary(href="") Xem thêm  

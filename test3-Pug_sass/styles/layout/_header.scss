@@ -1,0 +1,82 @@
+.infoheader {
+    color: $text-color;
+    background: $bg;
+    height: 2rem;
+    &__hotline {
+        line-height: 2rem;
+        cursor: pointer;
+    }
+    &__hotline:hover {
+        opacity: 60%;
+    }
+    &__shopsystem {
+        text-align: right;
+        line-height: 2rem;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
+    @include maxWidth(992px) {
+        &__shopsystem {
+            display: none;
+        }
+    }
+}
+
+.mainheader {
+    h1 {
+        font-family: 'Recursive';
+    }
+    &__logo {
+        img {
+            display: block;
+            height: 80%;
+        }
+    }
+    &__user {
+        margin: auto 0;
+        text-align: right;
+        button {
+            line-height: 2.5em;
+            background: $text-color;
+            padding: 0 1em;
+        }
+        button:hover {
+            color: $text-color;
+            background: $bg;
+        }
+    }
+    @include maxWidth(768px) {
+        h1 {
+            display: none;
+        }
+    }
+}
+
+.navbar {
+    background-color: $text-color!important;
+    /* padding: 0 3.5em; */
+    font-weight: 600;
+    a {
+        color: black !important;
+    }
+    a:hover {
+        background-color: $bg-second;
+        border-radius: 1rem;
+    }
+    &__mainmenu {
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            border-radius: 1rem;
+        }
+    }
+    &__extention {
+        @include main-button();
+        button {
+            border: none;
+        }
+    }
+}

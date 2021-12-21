@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="bootstrap/js/jquery.min.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.css">
+    <title>Trang chủ hoa quả</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <section class="infoheader">
+            <div class="container">
+                <section class="row">
+                    <marquee class="infoheader__run col-xl-6 col-lg-4 col-md-4">CHUYÊN CUNG CẤP SỈ VÀ LẼ CÁC LOẠI TRÁI CÂY TƯƠI NHẬP KHẨU TỪ CÁC NƯỚC ÚC, MỸ, CANADA, PHÁP, HÀ LAN, BA LAN, CHILÊ, NAM PHI, NEW ZEALAND, TÂY BAN NHA, ĐÀI LOAN, HÀN QUỐC, NHẬT BẢN ... TRÁI CÂY ĐẶC SẢN VIỆT NAM CHUẨN VIETGAP, GLOBAL
+                        GAP, ORGANIC, XUẤT KHẨU ... BÁNH KẸO, THỰC PHẨM DINH DƯỠNG NHẬP KHẨU TỪ NHIỀU NƯỚC TRÊN THẾ GIỚI ...</marquee>
+                    <i class="infoheader__phone col-lg-2 col-md-2  fas fa-phone-alt">: 0834701155</i>
+                    <div class="infoheader__social col-lg-2 col-md-2">
+                        Social:
+                        <a href="#" class="infoheader__social fab fa-facebook"></a>
+                        <a href="#" class="infoheader__social fab fa-youtube"></a>
+                        <a href="#" class="infoheader__social fab fa-facebook-messenger"></a>
+                        <a href="#" class="infoheader__social fas fa-envelope-square"></a>
+                    </div>
+                    <div class="infoheader__signin col-xl-2 col-lg-4 col-md-4 col-sm-12" aria-hidden="true">
+                        <button data-toggle="modal" data-target="#dialogdangnhap">Đăng nhập</button>
+                        <div class="modal fade" id="dialogdangnhap">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">ĐĂNG NHẬP</h4>
+                                        <button type="button" class="close" data-dismiss="modal">×</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="mx-auto modal-body">
+                                        <form action="/action_page.php">
+                                            <div class="form-group">
+                                                <label for="taikhoan">Tài khoản:</label>
+                                                <input class="form-control" placeholder="Nhập tài khoản" id="taikhoan">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật khẩu:</label>
+                                                <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="pwd">
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox"> Lưu
+                                              </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="mx-auto modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Đăng nhập</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button data-toggle="modal" data-target="#dialogdangky">Đăng ký</button>
+                        <div class="modal fade" id="dialogdangky">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">ĐĂNG KÝ</h4>
+                                        <button type="button" class="close" data-dismiss="modal">×</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="mx-auto modal-body">
+                                        <form action="/action_page.php">
+                                            <div class="form-group">
+                                                <label for="hoten">Họ và tên</label>
+                                                <input class="form-control" placeholder="Tên của bạn" id="hoten">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input class="form-control" placeholder="Email" id="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="taikhoan">Tài khoản:</label>
+                                                <input class="form-control" placeholder="Nhập tài khoản" id="taikhoan">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật khẩu:</label>
+                                                <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="pwd">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Nhập lại mật khẩu:</label>
+                                                <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" id="pwd">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="mx-auto modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Đăng Ký</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+        </section>
+        </div>
+    </header>
+    <!-- Thanh navi -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <section class="container">
+            <a class="navbar-branch" href="#">
+                <img src="anh/logominhphuong.jpg" alt="logo">
+            </a>
+            <div class="navbar__menuan">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto   ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown" aria-haspopup="true">SẢN PHẨM</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">TRÁI CÂY NHẬP KHẨU</a>
+                            <a class="dropdown-item" href="#">TRÁI CÂY ĐẶC SẢN VIỆT NAM</a>
+                            <a class="dropdown-item" href="#">GÓI QUÀ CAO CẤP</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar__shopcart">
+                <a class="fas fa-shopping-cart" aria-hidden="true"></a>
+                Giỏ Hàng
+            </button>
+            <div class="navbar__search">
+                <i class="navbar__search--icon fas fa-search" aria-hidden="true"></i>
+            </div>
+        </section>
+    </nav>
+    <!-- Slider -->
+    <section class="slider">
+        <figure id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <figure class="carousel-inner">
+                <figure class="carousel-item active">
+                    <img src="anh/sliderchery.jpg" alt="cherry">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="anh/slider2nho.jpg" alt="nho">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="anh/slider3hq.jpg" alt="thapcam">
+                </figure>
+            </figure>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </figure>
+    </section>
+    <!-- Trai cay nhap khau -->
+    <section class="traicay container">
+        <h2>Oo TRÁI CÂY NHẬP KHẨU oO</h2>
+        <p class="traicay__mota">TẤT CẢ CÁC LOẠI TRÁI CÂY TƯƠI NHẬP KHẨU THEO MÙA TỪ NHIỀU NƯỚC TRÊN THẾ GIỚI</p>
+        <div class="row">
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot1">
+                <div class="card">
+                    <img class="card-img-top" src="anh/nhoxanhmp.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Nho Xanh Sweet Globe</h6>
+                        <p class="card-text">320.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot2">
+                <div class="card">
+                    <img class="card-img-top" src="anh/nhodopinkmp.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Nho Đỏ Kẹo Candy Snaps</h6>
+                        <p class="card-text">195.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot3">
+                <div class="card">
+                    <img class="card-img-top" src="anh/nhodenhqmp.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Nho Đen Rượu Kyoho</h6>
+                        <p class="card-text">880.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot4">
+                <div class="card">
+                    <img class="card-img-top" src="anh/cherreydomp.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Cherry Đỏ Washington</h6>
+                        <p class="card-text">440.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="traicay__xemthem"><a href="">Xem thêm...</a></div>
+    </section>
+    <hr>
+    <!-- Trai cay Viet Nam -->
+    <section class="traicay container">
+        <h2>Oo TRÁI CÂY ĐẶC SẢN VIỆT NAM oO</h2>
+        <p class="traicay__mota">TRÁI CÂY ĐẶC SẢN VIỆT NAM THEO MÙA, CHUẨN XUẤT KHẨU, ORGANIC, VIET GAP, GLOBAL GAP ...</p>
+        <div class="row">
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot1">
+                <div class="card">
+                    <img class="card-img-top" src="anh/dualuoimp.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Dưa Lưới Nhật Reiwa Melon - Dưa Lưới Lệnh Hoà</h6>
+                        <p class="card-text">140.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot2">
+                <div class="card">
+                    <img class="card-img-top" src="anh/camsanhmp.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Cam Sành Lai Vung Bảo An | Mới thu hoạch</h6>
+                        <p class="card-text">70.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot3">
+                <div class="card">
+                    <img class="card-img-top" src="anh/dudump.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Đu Đủ Da Xanh Ruột Đỏ Giống Thái | Depaco Farm</h6>
+                        <p class="card-text">75.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot4">
+                <div class="card">
+                    <img class="card-img-top" src="anh/buoiduongmp.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Bưởi Đường Lá Cam Tân Triều | Depaco</h6>
+                        <p class="card-text">110.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="traicay__xemthem"><a href="">Xem thêm...</a></div>
+    </section>
+    <hr>
+    <!-- Goi qua cao cap -->
+    <section class="traicay container">
+        <h2>Oo GÓI QUÀ CAO CẤP oO</h2>
+        <p class="traicay__mota">GIỎ QUÀ CAO CẤP TRÁI CÂY - THỰC PHẨM NHẬP KHẨU GÓI THEO YÊU CẦU KIỂU DÁNG ĐA DẠNG, SANG TRỌNG, ĐẸP MẮT, TINH TẾ</p>
+        <div class="row">
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot1">
+                <div class="card">
+                    <img class="card-img-top" src="anh/goitraicay34.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Gói trái cây 34</h6>
+                        <p class="card-text">1.100.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot2">
+                <div class="card">
+                    <img class="card-img-top" src="anh/goitraicay33.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Gói trái cây 33</h6>
+                        <p class="card-text">890.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot3">
+                <div class="card">
+                    <img class="card-img-top" src="anh/goitraicay32.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Gói trái cây 32</h6>
+                        <p class="card-text">880.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="traicay__sanpham col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 traicay--cot4">
+                <div class="card">
+                    <img class="card-img-top" src="anh/goitraicay31.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h6 class="card-title">Gói trái cây 31</h6>
+                        <p class="card-text">1.190.000 đ</p>
+                        <a href="#" class="btn btn-primary fas fa-cart-arrow-down"> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="traicay__xemthem"><a href="">Xem thêm...</a></div>
+    </section>
+    <!-- Dang ky nhan tin -->
+    <section class="dangkynhantin container-fluid">
+        <div class="dangkynhantin__form col-12 col-sm-10 col-md-6 col-lg-6">
+            <h2>ĐĂNG KÝ NHẬN TIN</h2>
+            <p>Vui lòng nhập thông tin vào bên dưới để chúng tôi có thể liên hệ với bạn</p>
+            <form action="/action_page.php">
+                <div class="form-row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                        <input type="name" class="form-control" id="name" placeholder="Họ tên" name="name">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                        <input type="phone" class="form-control" id="phone" placeholder="Điện thoại" name="phone">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-10">
+                        <input type="content" class="form-control" id="content" placeholder="Nội dung" name="content">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2">
+                        <button type="submit" class="btn btn-primary">Gửi</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Tin tuc -->
+    <article class="tintuc">
+        <section class="container">
+            <h2>TIN TỨC</h2>
+            <h6>LỢI ÍCH CỦA TRÁI CÂY ĐỐI VỚI SỨC KHỎE - QUÁ TRÌNH THU HOẠCH CÁC LOẠI TRÁI CÂY</h6>
+            <div class="row">
+                <section class="tintuc__baiviet  col-sm-12 col-md-12 col-lg-6">
+                    <ul>
+                        <li class="tintuc__baiviet--hang1">
+                            <img src="anh/bvluu.jpg" alt="luu">
+                            <h5>12 tác dụng không ngờ của quả lựu</h5>
+                            <p>Lựu là nguồn cung cấp dồi dào vitamin A, C, E và nhiều khoáng chất khác...</p>
+                        </li>
+                        <li class="tintuc__baiviet--hang2">
+                            <img src="anh/bvcherry.jpg" alt="luu">
+                            <h5>Các Dòng Cherry Úc Tasmania Premium</h5>
+                            <p>Cherry Úc Tasmania Premium giòn tan, bóng bẩy, ngọt ngào & đậm đà. Một món quà cực kì sang trọng...</p>
+                        </li>
+                    </ul>
+                    <h6 class="tintuc__baiviet--xemthem"><a href="">Xem thêm...</a></h6>
+                </section>
+                <section class="tintuc__video col-sm-12 col-md-12 col-lg-6">
+                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/5IUSkALofXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </div>
+        </section>
+    </article>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__info col-sm-12 col-md-12 col-lg-5">
+                    <h2>MINH PHƯƠNG FRUIT</h2>
+                    <ul>
+                        <li>Địa chỉ: 13 Trần Hưng Đạo, P. Nguyễn Thái Bình, Quận 1, TP.HCM</li>
+                        <li>Điện thoại: <a href="#">028 38 222 855</a></li>
+                        <li>Email: minhphuongfruit@gmail.com</li>
+                        <li>Hộ kinh doanh Minh Phương Fruit</li>
+                        <li>Giấy ĐKKD số : 41A8040369 Ngày cấp : 01/08/2016</li>
+                    </ul>
+                </div>
+                <div class="footer__chinhsach col-sm-12 col-md-6 col-lg-4">
+                    <h4>QUY ĐỊNH - CHÍNH SÁCH</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="">HƯỚNG DẪN ĐẶT HÀNG VÀ THANH TOÁN</a></li>
+                        <li><a href="">CHÍNH SÁCH GIAO HÀNG VÀ ĐỔI TRẢ</a></li>
+                        <li><a href="">CHÍNH SÁCH BẢO MẬT THÔNG TIN</a></li>
+                    </ul>
+                </div>
+                <div class="footer__fanpg col-sm-12 col-md-6 col-lg-3">
+                    <h4>FANPAGE - FACEBOOK</h4>
+                    <hr>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fminhphuongfruit%2F&tabs=timeline&width=270&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="102%" height="60%"
+                        style="border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="container">
+                Copyright © 2019 Bản quyền thuộc về MINH PHUONG FRUIT.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

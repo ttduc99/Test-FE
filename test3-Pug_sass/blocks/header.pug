@@ -1,0 +1,58 @@
+header
+    .infoheader
+        .container
+            .row 
+                i.infoheader__hotline.col-sm-12.col-lg-6.fas.fa-phone-alt 
+                    | Hotline CSKH: 
+                    span 1900 633 694    
+                a.infoheader__shopsystem.col-lg-6.fas.fa-store  
+                    | Hệ thống cửa hàng
+    .mainheader.container
+        .row
+            .mainheader.col-sm-12.col-lg-4
+                h1 NGƯỜI ĐẸP VÌ LỤA
+            .mainheader__logo.col-6.col-sm-6.col-lg-4
+                img.mx-auto(src="../anh/logosva.png", alt="Logo")
+            .mainheader__user.col-6.col-sm-6.col-lg-4.px-auto
+                button.fas.fa-user  Tài khoản
+nav.navbar.navbar-expand-md.navbar-light.bg-light.sticky-top
+    .container
+        .navbar__menuicon
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive')
+                span.navbar-toggler-icon
+        #navbarResponsive.navbar__mainmenu.collapse.navbar-collapse
+            ul.navbar-nav
+                li.nav-item
+                    a.nav-link.active(href='#') TRANG CHỦ
+                li.nav-item.dropdown
+                    a#navbardrop.nav-link.dropdown-toggle(href='' data-toggle='dropdown' aria-haspopup='true') ĐẦM
+                    .dropdown-menu(aria-labelledby='navbarDropdown')
+                        +link("#","Đầm xòe")(class='dropdown-item')
+                        |
+                        |
+                        +link("#","Đầm ôm")(class='dropdown-item')
+                        |
+                        |
+                        +link("#","Đầm suông")(class='dropdown-item')
+                li.nav-item.dropdown
+                    a#navbardrop.nav-link.dropdown-toggle(href='' data-toggle='dropdown' aria-haspopup='true') ÁO
+                    .dropdown-menu(aria-labelledby='navbarDropdown')
+                        +link("#","Áo sơ mi")(class='dropdown-item')
+                        |
+                        |
+                        +link("#","Áo kiểu")(class='dropdown-item')
+                li.nav-item.dropdown
+                    a#navbardrop.nav-link.dropdown-toggle(href='' data-toggle='dropdown' aria-haspopup='true') QUẦN
+                    .dropdown-menu(aria-labelledby='navbarDropdown')
+                        +link("#","Quần dài")(class='dropdown-item')
+                        |
+                        |
+                        +link("#","Quần lửng")(class='dropdown-item')
+                li.nav-item
+                    a.nav-link(href='#') BỘ SƯU TẬP              
+                li.nav-item
+                    a.nav-link(href='#') KIẾN THỨC
+        .navbar__extention
+            i.fas.fa-search.mr-3
+            button.fas.fa-shopping-cart.mx-auto  Giỏ hàng 
+                span.badge.badge-pill.badge-danger 3

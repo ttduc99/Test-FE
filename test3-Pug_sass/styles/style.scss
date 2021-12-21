@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Recursive:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Nunito:wght@200&family=Recursive:wght@300&display=swap');
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "layout/header";
+@import "layout/footer";
+body {
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.container-fuild {
+    margin: 0 2em;
+}
+
+.main-img {
+    height: 40rem;
+    width: 100%;
+}
+
+.slider {
+    @include maxWidth(480px) {
+        display: none;
+    }
+    .carousel-item {
+        img {
+            @extend .main-img;
+        }
+    }
+}
+
+.luxurytrip {
+    margin-top: 1rem;
+    &__bigimg {
+        img {
+            @extend .main-img;
+            @include maxWidth(768px) {
+                height: 100%;
+                @include circle-img($circle: true);
+            }
+        }
+    }
+    @include carousel-product();
+    @include card();
+    .card {
+        @include maxWidth(768px) {
+            width: 14rem;
+        }
+        @include maxWidth(320px) {
+            width: 12rem;
+        }
+    }
+    @include center-text();
+    &__product {
+        &__more {
+            @include btn-more();
+            a {
+                text-decoration: none;
+            }
+            text-align: center;
+        }
+    }
+    p {
+        @include maxWidth(768px) {
+            text-align: none;
+        }
+    }
+}
+
+.summersunset {
+    position: relative;
+    margin-top: 2rem;
+    &__bigimg {
+        img {
+            @extend .main-img;
+            @include maxWidth(768px) {
+                height: 100%;
+                margin-top: 1rem;
+                @include circle-img($circle: true);
+            }
+        }
+    }
+    @include carousel-product();
+    @include card();
+    .card {
+        @include maxWidth(768px) {
+            width: 14rem;
+        }
+        @include maxWidth(320px) {
+            width: 12rem;
+        }
+    }
+    @include center-text();
+    &__product {
+        &__more {
+            @include btn-more();
+            a {
+                text-decoration: none;
+            }
+            text-align: center;
+        }
+    }
+}
+
+.newproduct {
+    margin: 4rem 0;
+    @include center-text();
+    @include main-button();
+    .card {
+        margin-top: 1rem;
+        img {
+            height: 17rem;
+        }
+        p {
+            text-align: center;
+            color: red;
+        }
+        h6 {
+            text-align: center;
+        }
+        .btn {
+            width: 100%;
+            background: $second-color;
+        }
+        .btn:hover {
+            background-color: $text-color;
+            color: $second-color;
+        }
+        .card-img-top:hover {
+            padding: 1em;
+            transition: 0.7s;
+        }
+        @include maxWidth(768px) {
+            width: 15rem;
+        }
+    }
+    &__more {
+        margin-top: 2rem;
+        @include btn-more();
+        a {
+            text-decoration: none;
+        }
+        text-align: center;
+    }
+}
+
+.news {
+    &__main {
+        img {
+            width: 110%;
+            height: 20rem;
+            margin-top: 2rem;
+            display: block;
+            &:hover {
+                transform: scale(1.1);
+                transition: 1s;
+                cursor: pointer;
+            }
+        }
+        overflow: hidden;
+    }
+    margin-top: 1rem;
+    h2 {
+        text-align: center;
+        color: $second-color;
+        font-weight: bold;
+    }
+    &__anotherpost {
+        @include maxWidth(768px) {
+            display: none;
+        }
+        padding: 0;
+        width: 100%;
+        margin-left: 3rem;
+        img {
+            height: 10em;
+            width: 12em;
+            margin: 1em;
+            float: left;
+            &:hover {
+                transform: scale(1.1);
+                transition: 1s;
+                cursor: pointer;
+            }
+        }
+        ul {
+            li {
+                margin-right: 3rem;
+                clear: left;
+                list-style: none;
+                border-bottom: 1px solid rgb(136, 131, 131);
+                float: left;
+                h5 {
+                    padding-top: 1rem;
+                    text-align: center;
+                    &:hover {
+                        color: $second-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    &__more {
+        @include btn-more();
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

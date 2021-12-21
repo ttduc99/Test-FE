@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/login.js"></script>
+
+    <title>Login2</title>
+</head>
+<body>
+    <div class="main" style=" display: flex;justify-content: center; margin-top: 200px;">
+            <button class="btn-show" data-toggle="modal" data-target="#dialogdangnhap" style="margin: 0 auto;">Đăng nhập hệ thống</button>
+    </div>
+    <div class="modal fade" id="dialogdangnhap">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">ĐĂNG NHẬP</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="mx-auto modal-body">
+                    <form name="myForm" action="/action_page.php">
+                        <div class="form-group">
+                            <label for="taikhoan">Tài khoản:</label>
+                            <input class="form-control" placeholder="Nhập tài khoản" id="uname" name="uname">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Mật khẩu:</label>
+                            <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="pwd" name="psw">
+                        </div>
+                        <div class="form-group ">
+                            <div class="noti" style="text-align: center; color: red;"></div> 
+                            <div class="fg" style="text-align: center;"><a style="text-decoration: none;color: black;padding-top: 16px;"onclick="changePassShow()" data-toggle="modal" data-target="#changPass" href="#">Forgot password?</a></div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                    <button id="btn-login" type="button" class="btn btn-danger post" style='width:50%; margin:10px auto;'onclick="load()">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="changePass" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">ĐỔI MẬT KHẨU</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="mx-auto modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="oldpsw">Mật khẩu cũ</label>
+                            <input class="form-control" placeholder="Nhập mật khẩu cũ" id="oldpsw">
+                        </div>
+                        <div class="form-group">
+                            <label for="newpwd">Mật khẩu mới</label>
+                            <input type="password" class="form-control" placeholder="Nhập mật khẩu mới" id="newpsw">
+                        </div>
+                        <!-- <div class="form-group ">
+                            <div class="fg" style="text-align: center;"><a style="text-decoration: none;color: black;padding-top: 16px;" href="#">Trở lại</a></div>
+                        </div> -->
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="mx-auto modal-footer">
+                    <button type="button" class="btn btn-danger"  onclick="changePass()">Xác nhận</button>
+                    <button type="button" class="btn btn-secondary" onclick="back()">Trở về</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
