@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './demo.scss';
 class ChildComponent extends React.Component {
   state = {
@@ -9,10 +9,10 @@ class ChildComponent extends React.Component {
       showJobs: !this.state.showJobs,
     });
   };
-  handleOnclickDelete=(job)=>{
+  handleOnclickDelete = (job) => {
     // console.log(job)
-    this.props.deleteAjob(job)
-  }
+    this.props.deleteAjob(job);
+  };
   render() {
     let { arrJobs } = this.props;
     let { showJobs } = this.state;
@@ -22,8 +22,7 @@ class ChildComponent extends React.Component {
       <>
         {showJobs === false ? (
           <div>
-            <button className="btn-show"
-              onClick={() => this.handleShowHide()}>
+            <button className='btn-show' onClick={() => this.handleShowHide()}>
               Show
             </button>
           </div>
@@ -31,11 +30,14 @@ class ChildComponent extends React.Component {
           // }
           // {showJobs &&
           <>
-            <div className="job-lists">
+            <div className='job-lists'>
               {arrJobs.map((item, index) => {
                 return (
                   <div key={item.id}>
-                    {item.title}-{item.salary} <></><button onClick={()=>this.handleOnclickDelete(item)}>X</button>
+                    {item.title}-{item.salary} <></>
+                    <button onClick={() => this.handleOnclickDelete(item)}>
+                      X
+                    </button>
                   </div>
                 );
               })}
@@ -43,7 +45,6 @@ class ChildComponent extends React.Component {
             <div>
               <button onClick={() => this.handleShowHide()}>Hide</button>
             </div>
-          
           </>
         )}
       </>
